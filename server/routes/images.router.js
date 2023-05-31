@@ -31,9 +31,11 @@ const upload = multer({
 router.post('/', upload.single('image'), (req, res) => {
     // Retrieve the key (path) of the uploaded file from the request object
     const fileKey = req.file.key;
+    const awsBucket = process.env.AWS_BUCKET_URL
 
     // Construct the URL of the uploaded file using the S3 bucket URL and the file key
-    const imageUrl = `https://aws-spike.s3.amazonaws.com/${fileKey}`;
+    // THIS MUST BE CHANGED TO YOUR AWS BUCKET ADDRESS
+    const imageUrl = `${awsBucket}/${fileKey}`;
     console.log('new image url:', imageUrl)
     // Save the image URL and other data to a database or perform any required operations
 
