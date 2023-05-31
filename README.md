@@ -73,6 +73,7 @@ Before you get started, make sure you have the following software installed on y
 SERVER_SESSION_SECRET=superDuperSecret
 ACCESS_KEY = [YOUR AWS ACCESS KEY]
 SECRET_ACCESS_KEY = [YOUR AWS SECRET ACCESS KEY]
+AWS_BUCKET_URL = https://[your aws bucket name].s3.amazonaws.com
 ```
 8. Create a database named `thermasolutions` in PostgresSQL
 If you would like to name your database something else, you will need to change `thermasolutions` to the name of your new database name in `server/modules/pool.js`
