@@ -69,6 +69,3 @@ DELIMITER ',' CSV HEADER;
 
 select * from device_data
 where "Serial Number" = 'B00H220003';
-
-ALTER TABLE "incident" 
-ADD COLUMN "image_url" VARCHAR(200);
