@@ -9,7 +9,7 @@ import moment from 'moment';
 function ProductInquiry33() {
     const history = useHistory();
     const dispatch = useDispatch();
-    const defaultDate = moment().format('YYYY-MM-D')
+    const defaultDate = moment().format('YYYY-MM-DD')
 
     const userReachedSummary = useSelector(store => store.userReachedSummary)
     const storeRepReportingInfo = useSelector(store => store.repReportingInfo)

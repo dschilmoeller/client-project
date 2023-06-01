@@ -10,7 +10,7 @@ function ProductInquiry6() {
     const history = useHistory();
     const dispatch = useDispatch();
     const userReachedSummary = useSelector(store => store.userReachedSummary)
-    const defaultDate = moment().format('YYYY-MM-D')
+    const defaultDate = moment().format('YYYY-MM-DD')
     const storeEventInfo = useSelector(store => store.eventInfo)
 
     const [userSubmitted, setUserSubmitted] = useState(false)
