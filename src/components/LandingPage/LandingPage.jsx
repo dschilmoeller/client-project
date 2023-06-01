@@ -27,8 +27,8 @@ function LandingPage() {
             <Typography textAlign='center' variant='h5' sx={{ padding: 2 }}>Contact ThermaSolutions</Typography>
             <Stack textAlign='center' direction='column' spacing={2} justifyContent='space-around'>
                 <Box sx={{ padding: '20px' }}>
-                    <Typography sx={{ padding: '5px' }}>Equipment Inquiries and Feedback</Typography>
-                    <Button onClick={() => history.push('/selectform')} variant='contained'>Hospital Staff</Button>
+                    <Typography sx={{ padding: '5px' }}>Produt Inquiries and Feedback</Typography>
+                    <Button onClick={() => history.push('/selectform')} variant='contained'>Distributors</Button>
                 </Box>
                 <Box sx={{ padding: '20px' }}>
                     <Typography>ThermaSolutions Technicians</Typography>
